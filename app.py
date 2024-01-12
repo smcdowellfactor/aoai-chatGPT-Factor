@@ -517,7 +517,7 @@ def stream_without_data(response, history_metadata={}):
         else:
             deltaText = ""
         if deltaText and deltaText != "[DONE]":
-            responseText += deltaText
+            responseText = deltaText
 
         response_obj = {
             "id": line["id"],
