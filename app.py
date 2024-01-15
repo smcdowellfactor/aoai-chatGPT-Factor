@@ -513,6 +513,7 @@ def stream_without_data(response, history_metadata={}):
     responseText = ""
     for line in response:
         deltaText = ""
+        responseText = ""
         if line["choices"]:
             deltaText = line["choices"][0]["delta"].get('content')
         else:
